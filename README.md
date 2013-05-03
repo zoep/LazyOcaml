@@ -6,15 +6,15 @@ This is completely useless since Ocaml already provides a Lazy module, but it wa
 
 Delay and force can be expessed as syntactic sugar as following:
 
-![equation](http://www.sciweavers.org/upload/Tex2Img_1367592285/render.png)
+![equation](http://bit.ly/ZF0Fbf)
 
 Usage
 -----
 To compile LazySugar.ml:
 
-		ocamlc  -pp "camlp5o pa_extend.cmo q_MLast.cmo" -I +camlp5 -c LazySugar.ml
+	$ ocamlc  -pp "camlp5o pa_extend.cmo q_MLast.cmo" -I +camlp5 -c LazySugar.ml
 
 To to use delay and force in an ocaml program, namely test.ml:
 
-		ocamlc -pp "camlp5o ./LazySugar.cmo" test.ml -o test
+	$ ocamlc -pp "camlp5o ./LazySugar.cmo" test.ml -o test
 
