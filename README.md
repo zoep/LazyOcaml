@@ -16,5 +16,5 @@ To compile LazySugar.ml:
 
 To use delay and force in an ocaml program, namely test.ml:
 
-	$ ocamlc -pp "camlp5o ./LazySugar.cmo" test.ml -o test
+	$ ocamlc -pp "camlp5o path/to/LazySugar.cmo" test.ml -o test
 
